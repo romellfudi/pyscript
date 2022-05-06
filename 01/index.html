@@ -50,14 +50,12 @@
 G = nx.Graph()
 nodes = list(range(4))
 G.add_edges_from(zip(nodes[0:-1], nodes[1:]))
-print("Edges:"G.edges())
-
-<!-- import matplotlib.pyplot as plt
+print("Edges:",G.edges())
 
 subax1 = plt.subplot(121)
 nx.draw(G, with_labels=True, font_weight='bold')
 subax2 = plt.subplot(122)
-nx.draw_shell(G, nlist=[range(5, 10), range(5)], with_labels=True, font_weight='bold') -->
+nx.draw_shell(G, nlist=[range(5, 10), range(5)], with_labels=True, font_weight='bold')
 </py-script></pre>
   <p>This chain graph has the following adjacency matrix:</p>
   <pre>
