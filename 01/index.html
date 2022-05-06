@@ -36,10 +36,6 @@
     ax.hist(rv, bins=30)
     fig
   </py-script>
-  <py-script>
-    import numpy as np
-    import networkx as nx
-  </py-script>
 
   <p>Message passing with linear algebra: a demo.</p>
   <p>Imagine we have a chain graph that looks like this:</p>
@@ -47,6 +43,8 @@
   <p>In NetworkX this graph would look like the following:</p>
   <pre>
         <py-script>
+import numpy as np
+import networkx as nx
 G = nx.Graph()
 nodes = list(range(4))
 G.add_edges_from(zip(nodes[0:-1], nodes[1:]))
