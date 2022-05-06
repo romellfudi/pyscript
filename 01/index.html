@@ -27,10 +27,11 @@ fig
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.random.randn(1000)
+np.random.seed(42)
+rv = np.random.standard_normal(1000)
 
 fig, ax = plt.subplots()
-ax.hist(x)
+ax.hist(rv, bins=30)
 fig
     </py-script>
   </body>
